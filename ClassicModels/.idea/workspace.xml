@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ea4d2794-cb35-4b25-9c32-e5f854c43a09" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YbpyfJZh6ttJnGol9ttQ2vLUJz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Apache24\htdocs\ClassicModels\Scripts" />
+      <recent name="C:\Apache24\htdocs\ClassicModels\Includes\Functions" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea4d2794-cb35-4b25-9c32-e5f854c43a09" name="Default Changelist" comment="" />
+      <created>1583221403282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583221403282</updated>
+      <workItem from="1583221404574" duration="5034000" />
+      <workItem from="1583237820660" duration="332000" />
+      <workItem from="1583239019901" duration="376000" />
+      <workItem from="1583255255216" duration="8366000" />
+      <workItem from="1583306640388" duration="89000" />
+      <workItem from="1583312022543" duration="599000" />
+      <workItem from="1583349320263" duration="7197000" />
+      <workItem from="1583392965666" duration="4692000" />
+      <workItem from="1583481696122" duration="7808000" />
+      <workItem from="1583527254020" duration="1737000" />
+      <workItem from="1583595992795" duration="4660000" />
+      <workItem from="1583761195760" duration="2630000" />
+      <workItem from="1583827815357" duration="2099000" />
+      <workItem from="1584040410883" duration="4053000" />
+      <workItem from="1584084896588" duration="2939000" />
+      <workItem from="1584097205468" duration="917000" />
+      <workItem from="1584101517101" duration="2082000" />
+      <workItem from="1584198995099" duration="5321000" />
+      <workItem from="1584219690124" duration="46000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584043638572">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584043638572" />
+    <state x="548" y="155" key="FileChooserDialogImpl" timestamp="1584219705086">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584219705086" />
+    <state x="585" y="228" key="NewPhpClassDialog" timestamp="1584043743675">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="585" y="228" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1584043743675" />
+    <state x="604" y="337" key="NewPhpFileDialog" timestamp="1584043748150">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="337" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1584043748150" />
+    <state x="93" y="93" width="1350" height="638" key="dock-window-1" timestamp="1584201076642">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1584201076642" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1584201477611">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584201477611" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584103081084">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584103081084" />
+  </component>
+</project>

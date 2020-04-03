@@ -1,0 +1,142 @@
+body{
+    padding:0;
+    margin:0;
+    font-family: Verdana;
+    background-color: rgb(45, 45, 45);
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+#mainHeader{
+    width: 100%;
+    height: 70px;
+    border-bottom: 3px solid black;
+    background-color: rgb(45, 45, 45);
+    position: fixed;
+    left:0;
+    top:0;
+}
+#mainHeader ul {
+    margin-right: 5%;
+}
+#mainHeader li{
+    float: right;
+    list-style-type: none;
+    padding: 10px;
+    margin:0 0 0 15px;
+    border:1px solid #ffffff;
+    background: rgb(75, 75, 75);
+    border-radius: 5px;
+    color:#ffffff;
+    transition: background-color 0.2s;
+}
+#mainHeader li:hover{
+    background-color: rgb(85, 85, 85);
+}
+#mainHeader a{
+    color:black
+}
+#mainHeader h2{
+    position: absolute;
+    left:40px ;
+    top:5px;
+    color: #ffffff;
+}
+.newButton{
+    width: 10vw;
+    height: 60px;
+    cursor: pointer;
+    background-color: rgb(75, 75, 75);
+    border:1px solid #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    position: absolute;
+    left: 45vw;
+    color:#ffffff;
+    top:2px;
+}
+.newButton a{
+    text-decoration: none;
+    color:red
+}
+.newButton:hover{
+    background-color: rgb(85, 85, 85);
+}
+.newButton:hover a{
+    color: rgb(45, 45, 45);
+}
+main{
+    margin-top:90px;
+}
+#mainFooter{
+    position: absolute;
+    top:0;
+    width: 100%;
+    background: rgb(45, 45, 45);
+    border-top: 3px solid black;
+    padding: 10px;
+}
+#mainFooter p{
+    padding:5px;
+    color: #ffffff;
+    text-align: center;
+}
+.dataTableHolder, #productsTableHolder{
+    margin-left: 5vw;
+    width: auto;
+    max-width: 90vw;
+    overflow-x: auto;
+}
+.dataTable, tr ,td, th{
+    background-color: rgb(40, 40, 40);
+    border:1px solid #ffffff;
+    border-collapse: collapse;
+    padding: 12px;
+    color:white
+}
+.dataTable a{
+    color:#ffffff;
+}
+#productsTable, tr, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+}
+#emptyMessage{
+    color: #ffffff;
+    text-align: center;
+    margin-top:20vh;
+}
+.inputField{
+    margin-top:10px;
+}
+.inputField label{
+    color: #ffffff;
+}
+.inputField input{
+    float: right;
+    border-radius: 5px;
+    border:1px solid rgb(0,0,0);
+}
+input[type="submit"]{
+    background-color: inherit;
+    border: 1px solid #ffffff;
+    color:#ffffff;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+form{
+    padding: 10px;
+    background-color: rgb(45, 45, 45);
+    border:2px solid rgb(0,0,0);
+    border-radius: 15px 15px;
+    width:25vw;
+    margin-left:37.5vw;
+    margin-top:20px;
+    font-family: arial;
+}
+select{
+    display: block;
+}
