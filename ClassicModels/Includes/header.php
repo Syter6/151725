@@ -33,7 +33,8 @@
 				<a href="../Customers/"><li>Customers</li></a>
 				<a href="../Employees/"><li>Employees</li></a>
 				<a href="../Offices/"><li>Offices</li></a>
-				<a href="../ProductLines"><li>ProductLines</li></a>
+				<a href="../ProductLines/"><li>ProductLines</li></a>
+				<a href="../Orders/"><li>Order</li></a>
 			</ul>
 		</header>
         <main>

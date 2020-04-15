@@ -97,7 +97,6 @@
 		$id = isset($_GET["id"]) ? $_GET["id"] : null;
 
 		$first = true;
-
 		$pk = get_pk($table_name);
 
 		$sql = "UPDATE $table_name SET $pk = $id, ";
@@ -121,7 +120,7 @@
 			echo "Couldn't edit data. please try again or get help";
 		}
 		catch(Exception $e){
-//			echo "<p><b>Error:</b>: " . $e->getMessage() . "</p>";
+			echo "<p><b>Error:</b> " . $e->getMessage() . "</p>";
 		}
 
 	}
@@ -172,5 +171,23 @@
 //			echo "<p><b>Error:</b>: " . $e->getMessage() . "</p>";
 		}
 
+
+	}
+
+	function UpdateOrders($data){
+		global $db;
+
+		$sql = "UPDATE orders SET requiredDate = '$data[requiredDate]', shippedDate = '$data[shippedDate]', status = '$data[status]', comments = '$data[comments]'
+		WHERE orderNumber = $data[orderNumber]";
+
+		try{
+			$sth = $db->prepare($sql);
+			$sth->execute();
+
+			Header('Location: index.php');
+		}
+		Catch(Exception $e){
+			echo "edit error";
+		}
 
 	}

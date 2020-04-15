@@ -56,8 +56,6 @@
 			echo "<td><a href='edit.php?id=$row[0]'>Edit</a></td>";
 			echo "</tr>";
 		}
-
-
 		echo "</table>";
 		echo "</div>";
 	}
@@ -107,6 +105,43 @@
 
 		echo "<input type='submit' value='Sla Op'/>";
 		echo "</form>";
+	}
+	function createOrderEditForm(){
+		global $db;
+
+		$num = isset($_GET["id"]) ? $_GET["id"] : null;
+		$sql = "SELECT o.orderNumber, o.orderDate, o.requiredDate, o.shippedDate, o.status, o.comments, c.customerName 
+		FROM orders AS o JOIN customers AS c USING(customerNumber) 
+		WHERE o.orderNumber = $num";
+
+		$sth = $db->prepare($sql);
+		$sth->execute();
+
+		$data = $sth->fetch();
+
+		?>
+			<form method="post">
+				<input type="hidden" name="orderNumber" value="<?php echo $data['orderNumber'] ?>"/><br/>
+				<label for='orderDate'>Order Date: </label>
+				<input type="text" id="orderDate" readonly name="orderDate" value="<?php echo $data['orderDate'] ?>"/><br/>
+				<label for="requiredDate">Required Date: </label>
+				<input type="text" id="requiredDate" name="requiredDate" value="<?php echo $data['requiredDate'] ?>"/><br/>
+				<label for="shippedDate">Shipped date: </label>
+				<input type="text" id="shippedDate" name="shippedDate" value="<?php echo $data['shippedDate'] ?>"/><br/>
+				<label for="status">Status: </label>
+				<select style='display: inline' name="status" id="status">
+					<option value="Shipped">Shipped</option>
+					<option value="Resolved">Resolved</option>
+					<option value="Cancelled">Cancelled</option>
+					<option value="On Hold">On Hold</option>
+					<option value="Disputed">Disputed</option>
+					<option value="InProcess">In Process</option>
+				</select><br/>
+				<label for="comments">Comments: </label>
+				<input type="text" id="comments" name="comments" value="<?php echo $data['comments'] ?>"/><br/>
+				<input type="submit" value="sla op"/>
+			</form>
+		<?php
 	}
 
 	function showSelect($table_name){
