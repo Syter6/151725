@@ -1,16 +1,21 @@
 <?php
-
 	$title = "Create Order";
 	include("../Includes/header.php");
 
 	$table_name = "Orders";
 
-	createForm($table_name, false);
+	createOrderEditForm(false);
 
-	$input_data = get_input_data($table_name);
-
-	if(required_filled($input_data, $table_name)) {
-		insert_data($table_name, $input_data);
+	if(dateInFuture($_POST["requiredDate"])){
+		if(customerNumberExists($_POST["customerNumber"])) {
+			$newOrderNumber = newOrderNumber();
+			createNewOrder($newOrderNumber, $_POST);
+		}
+		else{
+			echo "<p style='text-align: center'><b>Customer number doesn't exist</b></p>";
+		}
+	}else{
+		echo "<p style='text-align: center'><b>Date has to be in future</b></p>";
 	}
 
 	include("../Includes/footer.php");

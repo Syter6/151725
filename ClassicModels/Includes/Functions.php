@@ -174,6 +174,73 @@
 
 	}
 
+	function customerNumberExists($customerNumber){
+		global $db;
+
+		$sql = "SELECT EXISTS(SELECT * FROM customers WHERE customerNumber = '$customerNumber')";
+		$sth = $db->prepare($sql);
+		$sth->execute();
+
+		$cn = $sth->fetch()[0];
+		return $cn;
+	}
+
+	function newOrderNumber(){
+		global $db;
+
+		$sql = "SELECT MAX(OrderNumber) FROM Orders";
+		$sth = $db->prepare($sql);
+		$sth->execute();
+
+		$on = $sth->fetch()[0];
+
+		return $on + 1;
+	}
+
+	function dateInFuture($input){
+		$inputArray = explode("-", $input);
+
+		$day = date("d");
+		$month = date("m");
+		$year = date("Y");
+
+		$toekomst = true;
+
+		if($year < $inputArray[0]) {
+			$toekomst = true;
+		}
+		else if($year == $inputArray[0]){
+			if($month < $inputArray[1]){
+				$toekomst = true;
+			}else if($toekomst == $inputArray[1]){
+				if($day < $inputArray[2]){
+					$toekomst = true;
+				}else{
+					$toekomst = false;
+				}
+			}
+			else{
+				$toekomst = false;
+			}
+		}
+		else{
+			$toekomst = false;
+		}
+		return $toekomst;
+	}
+
+	function createNewOrder($orderNum, $post){
+		global $db;
+
+		$sql = "INSERT INTO Orders(orderNumber, orderDate, requiredDate, shippedDate, status, comments, customerNumber)
+		VALUES ($orderNum, CURDATE(), '$post[requiredDate]', '$post[shippedDate]', 'new', '$post[comments]', '$post[customerNumber]')";
+
+		$sth = $db->prepare($sql);
+		$sth->execute();
+
+		Header("Location: index.php");
+	}
+
 	function UpdateOrders($data){
 		global $db;
 
