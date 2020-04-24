@@ -4,7 +4,9 @@
 
     include("../Includes/header.php");
 
-	$sql = "SELECT * FROM products WHERE productLine = '$id'";
-	showDetailsTable($id, $sql, "Products");
+    $sql = "SELECT * FROM Products WHERE productLine = '" . $id . "'";
+
+    $table = new Table("Products");
+    $table->ShowTableDetails($sql);
 
     include("../Includes/footer.php");

@@ -4,7 +4,8 @@
 
 	$table_name = "Orders";
 
-	createOrderEditForm(false);
+	$form = new Form("Orders");
+	$form->CreateForm();
 
 	if(dateInFuture($_POST["requiredDate"])){
 		if(customerNumberExists($_POST["customerNumber"])) {

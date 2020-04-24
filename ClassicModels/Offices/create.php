@@ -4,7 +4,8 @@
 
 	$table_name = "Offices";
 
-	createForm($table_name, false, true);
+	$form = new Form("Customers");
+	$form->CreateForm();
 
 	$input_data = get_input_data($table_name);
 

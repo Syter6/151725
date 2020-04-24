@@ -4,8 +4,8 @@ include("../Includes/header.php");
 
 $table_name = "Orders";
 
-createOrderEditForm();
-
+$form = new Form("Orders");
+$form->CreateForm(true);
 
 $data = array(
 	"orderNumber"=>$_POST["orderNumber"],

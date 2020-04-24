@@ -3,6 +3,7 @@
 	$title = "Orders";
 	include("../Includes/header.php");
 
-	showDataTable($title);
+	$table = new Table("Orders");
+	$table->ShowDataTable();
 
 	include("../Includes/footer.php");

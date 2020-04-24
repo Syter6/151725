@@ -9,8 +9,8 @@
 	    $showButton = false;
     }
 
-	include("Functions.php");
 	include("DrawFunctions.php");
+	include("classes.php");
 ?>
 
 <!DOCTYPE html>

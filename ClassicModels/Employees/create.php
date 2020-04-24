@@ -2,9 +2,10 @@
 	$title = "Create Employee";
 	include("../Includes/header.php");
 
-	$table_name = "Employee";
+	$table_name = "Employees";
 
-	createForm($table_name, false);
+	$form = new Form("Employees");
+	$form->CreateForm();
 
 	$input_data = get_input_data($table_name);
 

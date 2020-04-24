@@ -2,9 +2,8 @@
 	$title = "Edit Office";
 	include("../Includes/header.php");
 
-	createForm("Offices", true);
-
-	$input_data = get_input_data("Offices");
+	$form = new Form("Offices");
+	$form->CreateForm(true);
 
 	if(required_filled($input_data, "Offices")){
 		edit_data("Offices", $input_data);

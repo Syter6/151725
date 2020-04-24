@@ -5,6 +5,8 @@
 	include("../Includes/header.php");
 
 	$sql = "SELECT * FROM Employees WHERE officeCode = '$id'";
-	showDetailsTable($id, $sql, "Employees");
+
+	$table = new Table("Employees");
+	$table->ShowTableDetails($sql);
 
 	include("../Includes/footer.php");
